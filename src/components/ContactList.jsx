@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function contactList() {
+export default function ContactList() {
 
     return (
         <table>
