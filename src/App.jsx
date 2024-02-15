@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './App.css'
 
 function App() {
-    const [contacts, setContacts] = useState(dummyContacts)
+    const [contacts, setContacts] = useState()
     console.log("Contacts: ", contacts);
     return (
         <>
