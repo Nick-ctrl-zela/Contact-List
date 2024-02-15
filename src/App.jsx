@@ -5,10 +5,15 @@ import './App.css'
 
 function App() {
     const [contacts, setContacts] = useState()
+    // const [selectedContactId, setSelectedContactId] = useState(null)
+
     console.log("Contacts: ", contacts);
+
     return (
         <>
             <ContactList />
+
+           
         </>
     );
 }

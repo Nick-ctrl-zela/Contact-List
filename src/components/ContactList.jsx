@@ -19,6 +19,7 @@ useEffect(() => {
             )
             const results = await response.json();
             setContacts(results)
+            console.log(results.message);
         }
         catch (error){
             console.error(error);
@@ -41,10 +42,7 @@ useEffect(() => {
                     <td> Phone </td>
                 </tr>
                 {
-                    contacts.map((contact) => {
-                        return <ContactRow key={contact.id} contact={contact} />
-                            
-                    })
+                   
                 }
             </tbody>
         </table>
