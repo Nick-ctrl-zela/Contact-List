@@ -42,7 +42,9 @@ useEffect(() => {
                     <td> Phone </td>
                 </tr>
                 {
-                   
+                contacts.map((contact) => {
+                    return <ContactRow key={contact.id} contact={contact}/>
+                })
                 }
             </tbody>
         </table>
