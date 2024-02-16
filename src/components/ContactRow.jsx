@@ -1,12 +1,10 @@
 import ContactList from './ContactList.jsx';
-
+import React from 'react';
 
 export default function ContactRow ({setSelectedContactId, contact}) {
 
 return (
-  <tr onClick={() => {
-    setSelectedContactId(contact.id)
-  }}> 
+  <tr onClick={() => setSelectedContactId(contact.id)}>
     <td>
       {contact.name}
     </td>
