@@ -5,13 +5,16 @@ import './App.css'
 
 function App() {
     const [contacts, setContacts] = useState()
-    // const [selectedContactId, setSelectedContactId] = useState(null)
+    const [selectedContactId, setSelectedContactId] = useState(null)
 
     console.log("Contacts: ", contacts);
 
     return (
         <>
-            <ContactList />
+        {selectedContactId ? (
+            <div> Selected Contact View </div>
+        ) : (<ContactList />)}
+            
 
         </>
     );

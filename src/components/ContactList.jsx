@@ -30,11 +30,11 @@ useEffect(() => {
 
     return (
         <table>
-            <thread>
+            <thead>
                 <tr>
                     <th colSpan="3"> Contact List</th>
                 </tr>
-            </thread>
+            </thead>
             <tbody>
                 <tr>
                     <td> Name </td>
