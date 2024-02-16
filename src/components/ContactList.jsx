@@ -8,8 +8,8 @@ import ContactRow from "./ContactRow";
   ];
 
 export default function ContactList({setSelectedContactId}) {
-
     const [contacts, setContacts] = useState(dummyContacts)
+
 
 useEffect(() => {
     async function fetchContacts () {
@@ -41,11 +41,13 @@ useEffect(() => {
                     <td> E-mail </td>
                     <td> Phone </td>
                 </tr>
-                {
-                contacts.map((contact) => {
-                    return <ContactRow key={contact.id} contact={contact}/>
-                })
-                }
+                {contacts.map((contact) => (
+                    <ContactRow
+                        key={contact.id}
+                        contact={contact}
+                        setSelectedContactId={setSelectedContactId}
+                        />
+                    ))}
             </tbody>
         </table>
     );
